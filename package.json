@@ -1,5 +1,5 @@
 {
-  "name": "ts-inversify-template",
+  "name": "node-ts-inversify-template",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,23 @@
     "release": "npx standard-version && git push --follow-tags origin main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "typescript",
+    "inversify",
+    "template",
+    "power",
+    "kernel",
+    "jest",
+    "eslint",
+    "conventional",
+    "commitlint"
+  ],
+  "author": {
+    "name": "Harry Tang",
+    "email": "harry@powerkernel.com",
+    "url": "https://powerkernel.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
