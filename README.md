@@ -1,0 +1,1 @@
+node-ts-inversify-template
