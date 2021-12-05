@@ -1,1 +1,3 @@
-node-ts-inversify-template
+# node-ts-inversify-template
+
+Backend node project template
