@@ -10,4 +10,4 @@ const TYPES = {
   ThrowableWeapon: Symbol("ThrowableWeapon"),
 };
 
-export default TYPES;
+export { TYPES };

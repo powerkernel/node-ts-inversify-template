@@ -5,10 +5,8 @@
  */
 
 import { inject, injectable } from "inversify";
-import ThrowableWeapon from "../interfaces/throwable-weapon";
-import Warrior from "../interfaces/warrior";
-import Weapon from "../interfaces/weapon";
-import TYPES from "../types";
+import { Warrior, Weapon, ThrowableWeapon } from "../interfaces";
+import { TYPES } from "../types";
 
 @injectable()
 class Ninja implements Warrior {

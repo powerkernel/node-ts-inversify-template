@@ -5,9 +5,9 @@
  */
 
 import "reflect-metadata";
-import Warrior from "./interfaces/warrior";
 import container from "./inversify.config";
-import TYPES from "./types";
+import { Warrior } from "./interfaces";
+import { TYPES } from "./types";
 
 const ninja = container.get<Warrior>(TYPES.Warrior);
 

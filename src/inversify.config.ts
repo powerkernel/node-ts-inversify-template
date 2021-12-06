@@ -5,11 +5,9 @@
  */
 
 import { Container } from "inversify";
-import TYPES from "./types";
+import { TYPES } from "./types";
 import { Ninja, Katana, Shuriken } from "./entities";
-import Warrior from "./interfaces/warrior";
-import ThrowableWeapon from "./interfaces/throwable-weapon";
-import Weapon from "./interfaces/weapon";
+import { Warrior, ThrowableWeapon, Weapon } from "./interfaces";
 
 const container = new Container();
 container.bind<Warrior>(TYPES.Warrior).to(Ninja);
