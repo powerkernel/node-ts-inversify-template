@@ -5,11 +5,10 @@
  */
 
 import "reflect-metadata";
-import container from "./inversify.config";
-import { Warrior } from "./interfaces";
-import { TYPES } from "./types";
 
-const ninja = container.get<Warrior>(TYPES.Warrior);
+/* local imports */
+import { startApolloServer } from "./frameworks/apollo";
 
-console.log(ninja.fight());
-console.log(ninja.sneak());
+(async () => {
+  startApolloServer();
+})();
