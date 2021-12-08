@@ -14,9 +14,7 @@ import fs from "fs";
 import app from "./express";
 
 async function startApolloServer() {
-  const typeDefs = gql(
-    fs.readFileSync(`${__dirname}/schema.graphql`, { encoding: "utf8" })
-  );
+  const typeDefs = gql(fs.readFileSync(`${__dirname}/schema.graphql`, { encoding: "utf8" }));
 
   const resolvers = await import("./resolvers");
 
@@ -35,7 +33,7 @@ async function startApolloServer() {
 
   const environment = config.get("env");
   console.log(
-    `🚀 Server ${environment} env is ready at http://localhost:${port}/${server.graphqlPath}`
+    `🚀 Server ${environment} env is ready at http://localhost:${port}${server.graphqlPath}`
   );
 }
 export { startApolloServer };

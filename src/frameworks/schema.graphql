@@ -1,4 +1,9 @@
 type Query {
-  fight: String
-  sneak: String
+  viewSystem: SystemDoc
+}
+
+type SystemDoc {
+  version: String
+  platform: String
+  node: String
 }

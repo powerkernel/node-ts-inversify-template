@@ -4,16 +4,10 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import "reflect-metadata";
-import container from "./../inversify.config";
-import { Warrior } from "./../interfaces";
-import { TYPES } from "./../types";
-
-const ninja = container.get<Warrior>(TYPES.Warrior);
+import { ViewSystemController } from "../domains/system";
 
 const Query = {
-  fight: () => ninja.fight(),
-  sneak: () => ninja.sneak(),
+  viewSystem: () => ViewSystemController.viewSystem(),
 };
 
 export { Query };

@@ -4,8 +4,10 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-interface Weapon {
-  hit(): string;
+import { SystemDoc } from "../System";
+
+interface ViewSystemRepository {
+  viewInfo(): SystemDoc;
 }
 
-export default Weapon;
+export default ViewSystemRepository;
