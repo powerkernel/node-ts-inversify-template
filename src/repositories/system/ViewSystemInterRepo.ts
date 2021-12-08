@@ -8,7 +8,7 @@ import { injectable } from "inversify";
 import ViewSystemRepository from "../../domains/system/view-system/ViewSystemRepository";
 
 /* local imports */
-import { SystemDoc } from "../../domains/system/System";
+import { SystemDoc } from "../../domains/system";
 
 @injectable()
 class ViewSystemInterRepo implements ViewSystemRepository {
