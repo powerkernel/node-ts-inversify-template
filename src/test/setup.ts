@@ -4,7 +4,8 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 import "reflect-metadata";
-import container from "./../inversify.config";
+import container from "../config/container";
+
 beforeEach(async () => {
   // create a snapshot so each unit test can modify
   // it without breaking other unit tests

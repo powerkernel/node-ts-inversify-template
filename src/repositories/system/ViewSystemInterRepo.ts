@@ -8,13 +8,12 @@ import { injectable } from "inversify";
 import ViewSystemRepository from "../../domains/system/view-system/ViewSystemRepository";
 
 /* local imports */
-import { SystemDoc } from "../../domains/system";
+import { SystemDoc } from "./../../domains/system";
 
 @injectable()
 class ViewSystemInterRepo implements ViewSystemRepository {
   viewInfo(): SystemDoc {
     return {
-      version: process.env.npm_package_version ?? "unknown",
       node: process.version,
       platform: process.platform,
     };

@@ -4,7 +4,6 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import "reflect-metadata";
 import { Container } from "inversify";
 
 /* local import */
