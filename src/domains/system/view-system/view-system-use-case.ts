@@ -5,14 +5,14 @@
  */
 
 /* npm packages */
-import { inject, injectable } from "inversify";
+import { inject, injectable } from 'inversify';
 
 /* types */
-import type ViewSystemRepository from "./ViewSystemRepository";
+import type ViewSystemRepository from './view-system-repository';
 
 /* local imports */
-import IDENTIFIERS from "../../../config/identifiers";
-import { System } from "./../System";
+import IDENTIFIERS from '../../../config/identifiers';
+import { System } from '../system';
 
 @injectable()
 class ViewSystemUseCase {

@@ -4,11 +4,11 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import { injectable } from "inversify";
-import ViewSystemRepository from "../../domains/system/view-system/ViewSystemRepository";
+import { injectable } from 'inversify';
+import ViewSystemRepository from '../../domains/system/view-system/view-system-repository';
 
 /* local imports */
-import { SystemDoc } from "./../../domains/system";
+import { SystemDoc } from '../../domains/system';
 
 @injectable()
 class ViewSystemInterRepo implements ViewSystemRepository {

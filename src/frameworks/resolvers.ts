@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import { ViewSystemController } from "./../domains/system";
+import { ViewSystemController } from './../domains/system';
 
 const Query = {
   viewSystem: () => ViewSystemController.viewSystem(),

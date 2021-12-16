@@ -4,19 +4,19 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import { ApolloServer, gql } from "apollo-server-express";
-import { ApolloServerPluginDrainHttpServer } from "apollo-server-core";
-import config from "config";
-import http from "http";
-import fs from "fs";
+import { ApolloServer, gql } from 'apollo-server-express';
+import { ApolloServerPluginDrainHttpServer } from 'apollo-server-core';
+import config from 'config';
+import http from 'http';
+import fs from 'fs';
 
 /* local imports */
-import app from "./express";
+import app from './express';
 
 async function startApolloServer() {
-  const typeDefs = gql(fs.readFileSync(`${__dirname}/schema.graphql`, { encoding: "utf8" }));
+  const typeDefs = gql(fs.readFileSync(`${__dirname}/schema.graphql`, { encoding: 'utf8' }));
 
-  const resolvers = await import("./resolvers");
+  const resolvers = await import('./resolvers');
 
   const httpServer = http.createServer(app);
   const server = new ApolloServer({
@@ -28,10 +28,10 @@ async function startApolloServer() {
   await server.start();
   server.applyMiddleware({ app });
 
-  const port = config.get("port");
+  const port = config.get('port');
   await new Promise<void>((resolve) => httpServer.listen({ port }, resolve));
 
-  const environment = config.get("env");
+  const environment = config.get('env');
   console.log(
     `🚀 Server ${environment} env is ready at http://localhost:${port}${server.graphqlPath}`
   );

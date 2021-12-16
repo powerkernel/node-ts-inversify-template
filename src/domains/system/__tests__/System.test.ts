@@ -4,12 +4,12 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import { System } from "../System";
+import { System } from '../system';
 
-it("returns a json object", () => {
+it('returns a json object', () => {
   const doc = {
-    platform: "MacOS",
-    node: "16 LTS",
+    platform: 'MacOS',
+    node: '16 LTS',
   };
   const system = System.create(doc);
 

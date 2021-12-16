@@ -6,11 +6,11 @@
 
 const IDENTIFIERS = {
   /* Repositories */
-  ViewSystemRepository: Symbol.for("ViewSystemRepository"),
+  ViewSystemRepository: Symbol.for('ViewSystemRepository'),
   /* Use Cases */
-  ViewSystemUseCase: Symbol.for("ViewSystemUseCase"),
+  ViewSystemUseCase: Symbol.for('ViewSystemUseCase'),
   /* Controller */
-  ViewSystemController: Symbol.for("ViewSystemController"),
+  ViewSystemController: Symbol.for('ViewSystemController'),
 };
 
 export default IDENTIFIERS;

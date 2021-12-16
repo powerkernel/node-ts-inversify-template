@@ -4,15 +4,17 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import type { Container } from "inversify";
-import ViewSystemUseCase from "../domains/system/view-system/ViewSystemUseCase";
+import type { Container } from 'inversify';
+import ViewSystemUseCase from '../domains/system/view-system/view-system-use-case';
 
 /* local imports */
-import IDENTIFIERS from "./identifiers";
+import IDENTIFIERS from './identifiers';
 
 /* main */
 const bindUseCases = (container: Container) => {
-  container.bind<ViewSystemUseCase>(IDENTIFIERS.ViewSystemUseCase).to(ViewSystemUseCase);
+  container
+    .bind<ViewSystemUseCase>(IDENTIFIERS.ViewSystemUseCase)
+    .to(ViewSystemUseCase);
 };
 
 /* export */

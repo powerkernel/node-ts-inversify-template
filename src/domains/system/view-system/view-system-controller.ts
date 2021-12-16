@@ -5,11 +5,11 @@
  */
 
 /*  */
-import { inject, injectable } from "inversify";
+import { inject, injectable } from 'inversify';
 
 /* local imports */
-import IDENTIFIERS from "../../../config/identifiers";
-import ViewSystemUseCase from "./ViewSystemUseCase";
+import IDENTIFIERS from '../../../config/identifiers';
+import ViewSystemUseCase from './view-system-use-case';
 
 @injectable()
 class ViewSystemController {

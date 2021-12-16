@@ -4,10 +4,10 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import "reflect-metadata";
+import 'reflect-metadata';
 
 /* local imports */
-import { startApolloServer } from "./frameworks/apollo";
+import { startApolloServer } from './frameworks/apollo';
 
 (async () => {
   startApolloServer();

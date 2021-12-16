@@ -4,16 +4,18 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import type { Container } from "inversify";
-import ViewSystemRepository from "../domains/system/view-system/ViewSystemRepository";
-import ViewSystemInterRepo from "../repositories/system/ViewSystemInterRepo";
+import type { Container } from 'inversify';
+import ViewSystemRepository from '../domains/system/view-system/view-system-repository';
+import ViewSystemInterRepo from '../repositories/system/view-system-inter-repo';
 
 /* local imports */
-import IDENTIFIERS from "./identifiers";
+import IDENTIFIERS from './identifiers';
 
 /* main */
 const bindRepositories = (container: Container) => {
-  container.bind<ViewSystemRepository>(IDENTIFIERS.ViewSystemRepository).to(ViewSystemInterRepo);
+  container
+    .bind<ViewSystemRepository>(IDENTIFIERS.ViewSystemRepository)
+    .to(ViewSystemInterRepo);
 };
 
 /* exports */

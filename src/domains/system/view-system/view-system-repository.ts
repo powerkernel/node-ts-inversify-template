@@ -5,7 +5,7 @@
  */
 
 /* local imports */
-import { SystemDoc } from "../System";
+import { SystemDoc } from '../system';
 
 interface ViewSystemRepository {
   viewInfo(): SystemDoc;

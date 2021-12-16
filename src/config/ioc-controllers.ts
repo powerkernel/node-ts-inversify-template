@@ -4,15 +4,17 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import type { Container } from "inversify";
-import ViewSystemController from "../domains/system/view-system/ViewSystemController";
+import type { Container } from 'inversify';
+import ViewSystemController from '../domains/system/view-system/view-system-controller';
 
 /* local imports */
-import IDENTIFIERS from "./identifiers";
+import IDENTIFIERS from './identifiers';
 
 /* main */
 const bindControllers = (container: Container) => {
-  container.bind<ViewSystemController>(IDENTIFIERS.ViewSystemController).to(ViewSystemController);
+  container
+    .bind<ViewSystemController>(IDENTIFIERS.ViewSystemController)
+    .to(ViewSystemController);
 };
 
 /* export */
