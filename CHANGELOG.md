@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/powerkernel/node-ts-inversify-template/compare/v0.1.4...v0.1.5) (2021-12-16)
+
+
+### Features
+
+* add clean architecture ([c60f009](https://github.com/powerkernel/node-ts-inversify-template/commit/c60f009cf9e507126ca491a4b6d2ca7af1424128))
+* add testing ([96c2449](https://github.com/powerkernel/node-ts-inversify-template/commit/96c2449bd32126c8dcbf0ae33848fe627ba73bbe))
+* small improments ([e89a831](https://github.com/powerkernel/node-ts-inversify-template/commit/e89a831dd713d1fd7d71835da990bc8257c09970))
+
 ### [0.1.4](https://github.com/powerkernel/node-ts-inversify-template/compare/v0.1.3...v0.1.4) (2021-12-06)
 
 
