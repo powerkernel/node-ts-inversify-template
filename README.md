@@ -2,6 +2,12 @@
 
 Backend node project template
 
+## Use this template
+
+```shell
+npx degit powerkernel/node-ts-inversify-template new-project
+```
+
 ## Technologies
 
 1. [InversifyJS](https://inversify.io)
