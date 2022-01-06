@@ -1,8 +1,0 @@
-type Query {
-  viewSystem: SystemDoc
-}
-
-type SystemDoc {
-  platform: String
-  node: String
-}

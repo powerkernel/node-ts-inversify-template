@@ -8,16 +8,13 @@ import { ApolloServer, gql } from 'apollo-server-express';
 import { ApolloServerPluginDrainHttpServer } from 'apollo-server-core';
 import config from 'config';
 import http from 'http';
-import fs from 'fs';
+import typeDefs from './type-defs';
+import resolvers from './resolvers';
 
 /* local imports */
 import app from './express';
 
 async function startApolloServer() {
-  const typeDefs = gql(fs.readFileSync(`${__dirname}/schema.graphql`, { encoding: 'utf8' }));
-
-  const resolvers = await import('./resolvers');
-
   const httpServer = http.createServer(app);
   const server = new ApolloServer({
     typeDefs,

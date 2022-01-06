@@ -4,6 +4,8 @@
   "description": "Backend node project template",
   "main": "index.js",
   "scripts": {
+    "build": "npx del-cli ./dist && tsc",
+    "start": "node ./dist/index.js",
     "dev": "npx ts-node-dev ./src/index.ts ",
     "lint": "eslint ./src --ext .ts --fix",
     "release": "npx standard-version && git push --follow-tags origin main",
@@ -35,6 +37,7 @@
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
+    "del-cli": "^4.0.1",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "husky": "^7.0.4",

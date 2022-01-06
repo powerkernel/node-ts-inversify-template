@@ -5,9 +5,10 @@
  */
 
 import { ViewSystemController } from './../domains/system';
-
-const Query = {
-  viewSystem: () => ViewSystemController.viewSystem(),
+const resolvers = {
+  Query: {
+    viewSystem: () => ViewSystemController.viewSystem(),
+  },
 };
 
-export { Query };
+export default resolvers;
