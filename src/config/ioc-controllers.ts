@@ -5,7 +5,7 @@
  */
 
 import type { Container } from 'inversify';
-import ViewSystemController from '../domains/system/view-system/view-system-controller';
+import ViewSystemController from '../domains/system/controllers/view-system-controller';
 
 /* local imports */
 import IDENTIFIERS from './identifiers';

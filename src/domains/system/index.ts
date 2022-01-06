@@ -5,12 +5,12 @@
  */
 
 /* types imports */
-import type ViewSystemController from './view-system/view-system-controller';
+import type ViewSystemController from './controllers/view-system-controller';
 
 /* local imports */
 import { System, SystemDoc } from './system';
-import ViewSystemUseCase from './view-system/view-system-use-case';
-import ViewSystemRepository from './view-system/view-system-repository';
+import ViewSystemUseCase from './use-cases/view-system-use-case';
+import ViewSystemRepository from './repositories/view-system-repository';
 import IDENTIFIERS from '../../config/identifiers';
 import container from '../../config/container';
 

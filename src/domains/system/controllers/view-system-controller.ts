@@ -9,7 +9,7 @@ import { inject, injectable } from 'inversify';
 
 /* local imports */
 import IDENTIFIERS from '../../../config/identifiers';
-import ViewSystemUseCase from './view-system-use-case';
+import ViewSystemUseCase from './../use-cases/view-system-use-case';
 
 @injectable()
 class ViewSystemController {

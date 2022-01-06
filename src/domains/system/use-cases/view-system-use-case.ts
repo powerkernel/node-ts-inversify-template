@@ -8,7 +8,7 @@
 import { inject, injectable } from 'inversify';
 
 /* types */
-import type ViewSystemRepository from './view-system-repository';
+import type ViewSystemRepository from '../repositories/view-system-repository';
 
 /* local imports */
 import IDENTIFIERS from '../../../config/identifiers';

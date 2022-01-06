@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import { System } from '../system';
+import { System } from './system';
 
 it('returns a json object', () => {
   const doc = {

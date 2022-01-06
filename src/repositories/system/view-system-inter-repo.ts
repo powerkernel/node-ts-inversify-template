@@ -5,7 +5,7 @@
  */
 
 import { injectable } from 'inversify';
-import ViewSystemRepository from '../../domains/system/view-system/view-system-repository';
+import ViewSystemRepository from '../../domains/system/repositories/view-system-repository';
 
 /* local imports */
 import { SystemDoc } from '../../domains/system';

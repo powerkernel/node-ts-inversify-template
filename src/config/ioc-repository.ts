@@ -5,7 +5,7 @@
  */
 
 import type { Container } from 'inversify';
-import ViewSystemRepository from '../domains/system/view-system/view-system-repository';
+import ViewSystemRepository from '../domains/system/repositories/view-system-repository';
 import ViewSystemInterRepo from '../repositories/system/view-system-inter-repo';
 
 /* local imports */
