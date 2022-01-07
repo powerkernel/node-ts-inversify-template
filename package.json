@@ -30,6 +30,15 @@
     "url": "https://powerkernel.com"
   },
   "license": "ISC",
+  "dependencies": {
+    "@powerkernel/power-common": "^0.1.18",
+    "apollo-server-core": "^3.6.1",
+    "apollo-server-express": "^3.6.1",
+    "config": "^3.3.6",
+    "express": "^4.17.2",
+    "inversify": "^6.0.1",
+    "reflect-metadata": "^0.1.13"
+  },
   "devDependencies": {
     "@commitlint/cli": "^16.0.1",
     "@commitlint/config-conventional": "^16.0.0",
@@ -45,14 +54,5 @@
     "prettier": "2.5.1",
     "ts-jest": "^27.1.2",
     "typescript": "^4.5.4"
-  },
-  "dependencies": {
-    "@powerkernel/power-common": "^0.1.18",
-    "apollo-server-core": "^3.6.1",
-    "apollo-server-express": "^3.6.1",
-    "config": "^3.3.6",
-    "express": "^4.17.2",
-    "inversify": "^6.0.1",
-    "reflect-metadata": "^0.1.13"
   }
 }
