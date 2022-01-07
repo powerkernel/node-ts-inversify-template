@@ -5,10 +5,10 @@
  */
 
 /* local imports */
-import { SystemDoc } from '../system';
+import { SystemDto } from '../dtos';
 
 interface ViewSystemRepository {
-  viewInfo(): SystemDoc;
+  viewInfo(): SystemDto;
 }
 
 export default ViewSystemRepository;

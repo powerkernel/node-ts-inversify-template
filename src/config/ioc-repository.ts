@@ -5,11 +5,11 @@
  */
 
 import type { Container } from 'inversify';
-import ViewSystemRepository from '../domains/system/repositories/view-system-repository';
-import ViewSystemInterRepo from '../repositories/system/view-system-inter-repo';
 
 /* local imports */
 import IDENTIFIERS from './identifiers';
+import { ViewSystemRepository } from '../domains/system/repositories';
+import { ViewSystemInterRepo } from '../repositories/system';
 
 /* main */
 const bindRepositories = (container: Container) => {

@@ -4,10 +4,17 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import { ViewSystemController } from './../domains/system';
+import container from '../config/container';
+import IDENTIFIERS from '../config/identifiers';
+import type { ViewSystemController } from '../domains/system/controllers';
+
+const ViewSystemCtl = container.get<ViewSystemController>(
+  IDENTIFIERS.ViewSystemController
+);
+
 const resolvers = {
   Query: {
-    viewSystem: () => ViewSystemController.viewSystem(),
+    viewSystem: () => ViewSystemCtl.execute(),
   },
 };
 

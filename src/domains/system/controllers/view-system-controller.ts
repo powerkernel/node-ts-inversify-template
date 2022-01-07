@@ -4,12 +4,14 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-/*  */
+/* npm packages */
 import { inject, injectable } from 'inversify';
+
+/* types imports */
+import type ViewSystemUseCase from './../use-cases/view-system-use-case';
 
 /* local imports */
 import IDENTIFIERS from '../../../config/identifiers';
-import ViewSystemUseCase from './../use-cases/view-system-use-case';
 
 @injectable()
 class ViewSystemController {
@@ -21,7 +23,7 @@ class ViewSystemController {
     this.useCase = useCase;
   }
 
-  public viewSystem() {
+  public execute() {
     return this.useCase.execute();
   }
 }

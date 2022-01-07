@@ -7,8 +7,10 @@
 const IDENTIFIERS = {
   /* Repositories */
   ViewSystemRepository: Symbol.for('ViewSystemRepository'),
+
   /* Use Cases */
   ViewSystemUseCase: Symbol.for('ViewSystemUseCase'),
+
   /* Controller */
   ViewSystemController: Symbol.for('ViewSystemController'),
 };

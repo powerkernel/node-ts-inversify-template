@@ -4,15 +4,16 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
+/* npm packages */
 import { injectable } from 'inversify';
-import ViewSystemRepository from '../../domains/system/repositories/view-system-repository';
 
 /* local imports */
-import { SystemDoc } from '../../domains/system';
+import ViewSystemRepository from '../../domains/system/repositories/view-system-repository';
+import { SystemDto } from '../../domains/system/dtos';
 
 @injectable()
 class ViewSystemInterRepo implements ViewSystemRepository {
-  viewInfo(): SystemDoc {
+  viewInfo(): SystemDto {
     return {
       node: process.version,
       platform: process.platform,
