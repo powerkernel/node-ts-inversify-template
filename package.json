@@ -1,6 +1,6 @@
 {
   "name": "node-ts-inversify-template",
-  "version": "0.1.9",
+  "version": "1.0.0",
   "description": "Backend node project template",
   "main": "index.js",
   "scripts": {
