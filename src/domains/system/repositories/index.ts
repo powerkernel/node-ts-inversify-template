@@ -4,6 +4,6 @@
  * @copyright Copyright (c) 2022 Power Kernel
  */
 
-import ViewSystemRepository from './view-system-repository';
+import ViewSystemRepo from './view-system-repo';
 
-export { ViewSystemRepository };
+export { ViewSystemRepo };

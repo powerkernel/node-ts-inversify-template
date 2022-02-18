@@ -10,7 +10,7 @@ import type { ViewSystemController } from '../domains/system/controllers';
 
 const resolvers = {
   Query: {
-    viewSystem: () => {
+    system: () => {
       const ctl = container.get<ViewSystemController>(
         IDENTIFIERS.ViewSystemController
       );

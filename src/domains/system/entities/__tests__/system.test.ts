@@ -6,8 +6,10 @@
 
 import { System } from '..';
 
-it('returns a json object', () => {
+it('should return a json object', () => {
   const doc = {
+    version: '1.2.3',
+    hostname: 'some.server.com',
     platform: 'MacOS',
     node: '16 LTS',
   };

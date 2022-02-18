@@ -6,7 +6,7 @@
 
 const IDENTIFIERS = {
   /* Repositories */
-  ViewSystemRepository: Symbol.for('ViewSystemRepository'),
+  ViewSystemRepo: Symbol.for('ViewSystemRepo'),
 
   /* Use Cases */
   ViewSystemUseCase: Symbol.for('ViewSystemUseCase'),

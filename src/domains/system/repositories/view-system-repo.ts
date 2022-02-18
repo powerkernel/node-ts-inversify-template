@@ -7,8 +7,8 @@
 /* local imports */
 import { SystemDto } from '../dtos';
 
-interface ViewSystemRepository {
+interface ViewSystemRepo {
   viewInfo(): SystemDto;
 }
 
-export default ViewSystemRepository;
+export default ViewSystemRepo;

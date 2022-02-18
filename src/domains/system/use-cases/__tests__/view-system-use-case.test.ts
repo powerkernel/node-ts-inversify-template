@@ -8,13 +8,12 @@ import container from '../../../../config/container';
 import IDENTIFIERS from '../../../../config/identifiers';
 import type ViewSystemUseCase from '../view-system-use-case';
 
-it('executes normally', async () => {
+it('should return the system info', async () => {
   const useCase = container.get<ViewSystemUseCase>(
     IDENTIFIERS.ViewSystemUseCase
   );
-
   const result = await useCase.execute();
-
+  expect(result).toHaveProperty('version');
   expect(result).toHaveProperty('node');
   expect(result).toHaveProperty('platform');
 });

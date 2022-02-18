@@ -8,7 +8,7 @@
 import { inject, injectable } from 'inversify';
 
 /* types */
-import type ViewSystemRepository from '../repositories/view-system-repository';
+import type ViewSystemRepo from '../repositories/view-system-repo';
 
 /* local imports */
 import IDENTIFIERS from '../../../config/identifiers';
@@ -16,11 +16,9 @@ import { System } from './../entities';
 
 @injectable()
 class ViewSystemUseCase {
-  repository: ViewSystemRepository;
+  repository: ViewSystemRepo;
 
-  constructor(
-    @inject(IDENTIFIERS.ViewSystemRepository) repository: ViewSystemRepository
-  ) {
+  constructor(@inject(IDENTIFIERS.ViewSystemRepo) repository: ViewSystemRepo) {
     this.repository = repository;
   }
 

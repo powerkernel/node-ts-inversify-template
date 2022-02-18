@@ -7,11 +7,13 @@
 import { gql } from 'apollo-server-core';
 
 export default gql`
-  type SystemDoc {
+  type System {
+    version: String
+    hostname: String
     platform: String
     node: String
   }
   type Query {
-    viewSystem: SystemDoc
+    system: System
   }
 `;

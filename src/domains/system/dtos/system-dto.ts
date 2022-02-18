@@ -5,6 +5,8 @@
  */
 
 type SystemDto = {
+  version: string;
+  hostname: string;
   node: string;
   platform: string;
 };
