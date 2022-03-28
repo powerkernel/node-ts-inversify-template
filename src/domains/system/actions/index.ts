@@ -4,6 +4,6 @@
  * @copyright Copyright (c) 2022 Power Kernel
  */
 
-import ViewSystemRepo from "./view-system-repo";
+import ViewSystemAction from "./view-system-action";
 
-export { ViewSystemRepo };
+export { ViewSystemAction };

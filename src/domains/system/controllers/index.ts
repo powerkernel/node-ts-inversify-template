@@ -4,6 +4,6 @@
  * @copyright Copyright (c) 2022 Power Kernel
  */
 
-import ViewSystemController from './view-system-controller';
+import ViewSystemController from "./view-system-controller";
 
 export { ViewSystemController };

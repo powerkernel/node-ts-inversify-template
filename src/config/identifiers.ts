@@ -4,15 +4,10 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
+import SYSTEM_IDENTIFIES from "../domains/system/ioc/identifiers";
+
 const IDENTIFIERS = {
-  /* Repositories */
-  ViewSystemRepo: Symbol.for('ViewSystemRepo'),
-
-  /* Use Cases */
-  ViewSystemUseCase: Symbol.for('ViewSystemUseCase'),
-
-  /* Controller */
-  ViewSystemController: Symbol.for('ViewSystemController'),
+  ...SYSTEM_IDENTIFIES,
 };
 
 export default IDENTIFIERS;

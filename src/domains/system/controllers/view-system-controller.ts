@@ -5,26 +5,24 @@
  */
 
 /* npm packages */
-import { inject, injectable } from 'inversify';
+import { inject, injectable } from "inversify";
 
 /* types imports */
-import type ViewSystemUseCase from './../use-cases/view-system-use-case';
+import type ViewSystemAction from "../actions/view-system-action";
 
 /* local imports */
-import IDENTIFIERS from '../../../config/identifiers';
+import IDENTIFIERS from "../../../config/identifiers";
 
 @injectable()
 class ViewSystemController {
-  useCase: ViewSystemUseCase;
+  action: ViewSystemAction;
 
-  constructor(
-    @inject(IDENTIFIERS.ViewSystemUseCase) useCase: ViewSystemUseCase
-  ) {
-    this.useCase = useCase;
+  constructor(@inject(IDENTIFIERS.ViewSystemAction) action: ViewSystemAction) {
+    this.action = action;
   }
 
   public execute() {
-    return this.useCase.execute();
+    return this.action.execute();
   }
 }
 

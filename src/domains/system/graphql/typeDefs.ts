@@ -4,16 +4,16 @@
  * @copyright Copyright (c) 2022 Power Kernel
  */
 
-import { gql } from 'apollo-server-core';
+import { gql } from "apollo-server-express";
 
 export default gql`
+  extend type Query {
+    system: System
+  }
   type System {
     version: String
     hostname: String
     platform: String
     node: String
-  }
-  type Query {
-    system: System
   }
 `;

@@ -5,12 +5,12 @@
  */
 
 /* npm packages */
-import { injectable } from 'inversify';
-import os from 'os';
+import { injectable } from "inversify";
+import os from "os";
 
 /* local imports */
-import ViewSystemRepository from '../../domains/system/repositories/view-system-repo';
-import { SystemDto } from '../../domains/system/dtos';
+import ViewSystemRepository from "../../domains/system/repositories/view-system-repo";
+import { SystemDto } from "../../domains/system/dtos";
 
 @injectable()
 class ViewSystemInterRepo implements ViewSystemRepository {

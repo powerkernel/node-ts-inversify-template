@@ -3,8 +3,8 @@
  * @link https://powerkernel.com
  * @copyright Copyright (c) 2021 Power Kernel
  */
-import 'reflect-metadata';
-import container from '../config/container';
+import "reflect-metadata";
+import container from "../config/container";
 
 beforeEach(async () => {
   // create a snapshot so each unit test can modify

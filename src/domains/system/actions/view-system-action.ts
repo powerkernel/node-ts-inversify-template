@@ -5,17 +5,17 @@
  */
 
 /* npm packages */
-import { inject, injectable } from 'inversify';
+import { inject, injectable } from "inversify";
 
 /* types */
-import type ViewSystemRepo from '../repositories/view-system-repo';
+import type ViewSystemRepo from "../repositories/view-system-repo";
 
 /* local imports */
-import IDENTIFIERS from '../../../config/identifiers';
-import { System } from './../entities';
+import IDENTIFIERS from "../../../config/identifiers";
+import { System } from "../entities";
 
 @injectable()
-class ViewSystemUseCase {
+class ViewSystemAction {
   repository: ViewSystemRepo;
 
   constructor(@inject(IDENTIFIERS.ViewSystemRepo) repository: ViewSystemRepo) {
@@ -31,4 +31,4 @@ class ViewSystemUseCase {
   }
 }
 
-export default ViewSystemUseCase;
+export default ViewSystemAction;

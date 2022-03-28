@@ -4,6 +4,6 @@
  * @copyright Copyright (c) 2022 Power Kernel
  */
 
-import ViewSystemInterRepo from './view-system-inter-repo';
+import ViewSystemInterRepo from "./view-system-inter-repo";
 
 export { ViewSystemInterRepo };

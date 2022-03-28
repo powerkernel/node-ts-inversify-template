@@ -4,6 +4,6 @@
  * @copyright Copyright (c) 2022 Power Kernel
  */
 
-import SystemDto from './system-dto';
+import SystemDto from "./system-dto";
 
 export { SystemDto };

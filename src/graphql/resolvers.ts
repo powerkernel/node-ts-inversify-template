@@ -4,6 +4,6 @@
  * @copyright Copyright (c) 2022 Power Kernel
  */
 
-import ViewSystemUseCase from './view-system-use-case';
+import { resolvers as systemResolvers } from "./../domains/system/graphql/";
 
-export { ViewSystemUseCase };
+export default [systemResolvers];

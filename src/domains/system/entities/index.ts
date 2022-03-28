@@ -4,6 +4,6 @@
  * @copyright Copyright (c) 2022 Power Kernel
  */
 
-import System from './system';
+import System from "./system";
 
 export { System };

@@ -4,6 +4,7 @@
  * @copyright Copyright (c) 2022 Power Kernel
  */
 
-import ViewSystemRepo from "./view-system-repo";
+import resolvers from "./resolvers";
+import typeDefs from "./typeDefs";
 
-export { ViewSystemRepo };
+export { typeDefs, resolvers };

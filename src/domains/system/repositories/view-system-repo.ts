@@ -5,7 +5,7 @@
  */
 
 /* local imports */
-import { SystemDto } from '../dtos';
+import { SystemDto } from "../dtos";
 
 interface ViewSystemRepo {
   viewInfo(): SystemDto;

@@ -1,14 +1,14 @@
 /**
  * @author Harry Tang <harry@powerkernel.com>
  * @link https://powerkernel.com
- * @copyright Copyright (c) 2021 Power Kernel
+ * @copyright Copyright (c) 2022 Power Kernel
  */
 
-import container from '../config/container';
-import IDENTIFIERS from '../config/identifiers';
-import type { ViewSystemController } from '../domains/system/controllers';
+import container from "../../../config/container";
+import IDENTIFIERS from "../../../config/identifiers";
+import { ViewSystemController } from "../controllers";
 
-const resolvers = {
+export default {
   Query: {
     system: () => {
       const ctl = container.get<ViewSystemController>(
@@ -18,5 +18,3 @@ const resolvers = {
     },
   },
 };
-
-export default resolvers;

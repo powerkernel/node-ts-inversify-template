@@ -5,10 +5,10 @@
  */
 
 /* npm packages */
-import { Entity, Jsonifier } from '@powerkernel/power-common';
+import { Entity, Jsonifier } from "@powerkernel/power-common";
 
 /* local imports */
-import { SystemDto } from '../dtos';
+import { SystemDto } from "../dtos";
 
 class System extends Entity implements Jsonifier<SystemDto> {
   private wrappedVersion!: string;
