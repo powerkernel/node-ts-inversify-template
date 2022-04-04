@@ -25,7 +25,7 @@ async function startApolloServer() {
   });
 
   await server.start();
-  server.applyMiddleware({ app });
+  server.applyMiddleware({ app, path: "/" });
 
   const port = config.get("port");
   await new Promise<void>((resolve) => httpServer.listen({ port }, resolve));

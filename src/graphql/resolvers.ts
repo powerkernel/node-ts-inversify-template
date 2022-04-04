@@ -6,4 +6,13 @@
 
 import { resolvers as systemResolvers } from "./../domains/system/graphql/";
 
-export default [systemResolvers];
+const defaultResolver = {
+  Query: {
+    time: () => new Date().toISOString(),
+  },
+  Mutation: {
+    ping: () => "pong",
+  },
+};
+
+export default [defaultResolver, systemResolvers];

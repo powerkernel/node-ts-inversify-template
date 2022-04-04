@@ -4,12 +4,8 @@
  * @copyright Copyright (c) 2021 Power Kernel
  */
 
-import express from 'express';
+import express from "express";
 
 const app = express();
-
-app.get('/', (_req, res) => {
-  res.send();
-});
 
 export default app;
