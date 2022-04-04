@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/powerkernel/node-ts-inversify-template/compare/v1.1.0...v1.2.0) (2022-04-04)
+
+
+### Features
+
+* add default graphql query and mutation ([9c82f51](https://github.com/powerkernel/node-ts-inversify-template/commit/9c82f5133c594ac19359b70bf643fbf8bc2cedac))
+
 ## [1.1.0](https://github.com/powerkernel/node-ts-inversify-template/compare/v1.0.0...v1.1.0) (2022-03-28)
 
 
