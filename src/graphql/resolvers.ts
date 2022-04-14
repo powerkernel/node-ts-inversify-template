@@ -8,10 +8,14 @@ import { resolvers as systemResolvers } from "./../domains/system/graphql/";
 
 const defaultResolver = {
   Query: {
-    time: () => new Date().toISOString(),
+    time: () => {
+      return { data: new Date().toISOString() };
+    },
   },
   Mutation: {
-    ping: () => "pong",
+    ping: () => {
+      return { data: "pong" };
+    },
   },
 };
 

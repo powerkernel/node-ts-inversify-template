@@ -13,8 +13,9 @@ it("should execute normally", async () => {
     IDENTIFIERS.ViewSystemController
   );
 
-  const response = await controller.execute();
-  expect(response).toHaveProperty("version");
-  expect(response).toHaveProperty("node");
-  expect(response).toHaveProperty("platform");
+  const { data } = await controller.execute();
+  expect(data).toHaveProperty("version");
+  expect(data).toHaveProperty("node");
+  expect(data).toHaveProperty("platform");
+  expect(data).toHaveProperty("hostname");
 });

@@ -14,4 +14,5 @@ it("should return the system info", async () => {
   expect(result).toHaveProperty("version");
   expect(result).toHaveProperty("node");
   expect(result).toHaveProperty("platform");
+  expect(result).toHaveProperty("hostname");
 });

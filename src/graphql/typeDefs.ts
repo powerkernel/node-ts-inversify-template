@@ -9,10 +9,13 @@ import systemSchema from "../domains/system/graphql/typeDefs";
 
 const linkSchema = gql`
   type Query {
-    time: String
+    time: StringResponse
   }
   type Mutation {
-    ping: String
+    ping: StringResponse
+  }
+  type StringResponse {
+    data: String
   }
 `;
 

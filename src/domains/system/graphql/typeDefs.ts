@@ -8,12 +8,15 @@ import { gql } from "apollo-server-express";
 
 export default gql`
   extend type Query {
-    system: System
+    system: SystemResponse
   }
   type System {
     version: String
     hostname: String
     platform: String
     node: String
+  }
+  type SystemResponse {
+    data: System
   }
 `;

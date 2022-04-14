@@ -21,8 +21,10 @@ class ViewSystemController {
     this.action = action;
   }
 
-  public execute() {
-    return this.action.execute();
+  public async execute() {
+    return {
+      data: await this.action.execute(),
+    };
   }
 }
 
