@@ -17,6 +17,24 @@ const linkSchema = gql`
   type StringResponse {
     data: String
   }
+
+  input PaginationArg {
+    page: Int
+    pageSize: Int
+    start: Int
+    limit: Int
+  }
+
+  type Pagination {
+    total: Int!
+    page: Int!
+    pageSize: Int!
+    pageCount: Int!
+  }
+
+  type ResponseCollectionMeta {
+    pagination: Pagination!
+  }
 `;
 
 export default [linkSchema, systemSchema];

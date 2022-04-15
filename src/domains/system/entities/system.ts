@@ -5,7 +5,7 @@
  */
 
 /* npm packages */
-import { Entity, Jsonifier } from "@powerkernel/power-common";
+import { Entity, Jsonifier } from "@powerkernel/common";
 
 /* local imports */
 import { SystemDto } from "../dtos";
