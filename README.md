@@ -1,5 +1,9 @@
 # node-ts-inversify-template
 
+[![Node CI](https://github.com/powerkernel/node-ts-inversify-template/actions/workflows/node.js.yml/badge.svg)](https://github.com/powerkernel/node-ts-inversify-template/actions/workflows/node.js.yml)
+
+[![CodeQL](https://github.com/powerkernel/node-ts-inversify-template/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/powerkernel/node-ts-inversify-template/actions/workflows/codeql-analysis.yml)
+
 Backend node project template
 
 ## Use this template
