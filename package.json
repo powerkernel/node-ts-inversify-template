@@ -32,14 +32,14 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@powerkernel/common": "^0.2.0",
-    "apollo-server-core": "^3.10.1",
-    "apollo-server-express": "^3.6.7",
-    "config": "^3.3.7",
-    "express": "^4.17.3",
-    "graphql-tools": "^8.2.4",
-    "inversify": "^6.0.1",
-    "reflect-metadata": "^0.1.13"
+    "@powerkernel/common": "0.2.0",
+    "apollo-server-core": "3.10.1",
+    "apollo-server-express": "3.6.7",
+    "config": "3.3.7",
+    "express": "4.17.3",
+    "graphql-tools": "8.2.4",
+    "inversify": "6.0.1",
+    "reflect-metadata": "0.1.13"
   },
   "devDependencies": {
     "@commitlint/cli": "17.2.0",
