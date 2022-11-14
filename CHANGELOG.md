@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/powerkernel/node-ts-inversify-template/compare/v1.3.0...v1.4.0) (2022-11-14)
+
+
+### Features
+
+* add pageSize config ([92eed09](https://github.com/powerkernel/node-ts-inversify-template/commit/92eed096620b5ee0ef8b25a46fa5ff809eeeb60b))
+
+
+### Bug Fixes
+
+* **deps:** update apollo graphql packages to v3.11.1 ([d9d6761](https://github.com/powerkernel/node-ts-inversify-template/commit/d9d6761e38300e7189596664e7314224f6e7dfa8))
+* **deps:** update dependency @powerkernel/common to v0.2.15 ([bbe4cc6](https://github.com/powerkernel/node-ts-inversify-template/commit/bbe4cc6ebc63a97b01225b25daceda67dba9b4d9))
+* **deps:** update dependency config to v3.3.8 ([3243c00](https://github.com/powerkernel/node-ts-inversify-template/commit/3243c001f61189e162661a6faab3fe824d7ef980))
+* **deps:** update dependency express to v4.18.2 ([bd0d091](https://github.com/powerkernel/node-ts-inversify-template/commit/bd0d091810479d0a63b342cdc0fde89067064638))
+* **deps:** update dependency graphql-tools to v8.3.11 ([#159](https://github.com/powerkernel/node-ts-inversify-template/issues/159)) ([8418ea2](https://github.com/powerkernel/node-ts-inversify-template/commit/8418ea2a5a7ee7d965227ccabe02ad748fcecb12))
+
 ## [1.3.0](https://github.com/powerkernel/node-ts-inversify-template/compare/v1.2.1...v1.3.0) (2022-04-15)
 
 
