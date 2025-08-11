@@ -39,7 +39,7 @@
     "express": "4.21.2",
     "graphql-tools": "8.3.20",
     "inversify": "6.0.2",
-    "reflect-metadata": "0.1.13"
+    "reflect-metadata": "0.2.2"
   },
   "devDependencies": {
     "@commitlint/cli": "17.8.1",
