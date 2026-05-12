@@ -34,7 +34,7 @@
   "dependencies": {
     "@powerkernel/common": "0.2.18",
     "apollo-server-core": "3.13.0",
-    "apollo-server-express": "3.13.0",
+    "@apollo/server": "4.0.0",
     "config": "3.3.12",
     "express": "4.22.1",
     "graphql-tools": "8.3.20",
